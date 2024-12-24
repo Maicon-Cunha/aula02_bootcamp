@@ -23,12 +23,16 @@ import math
 
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
 
-numero_01 = int(input("Digite o primeiro número: "))
-numero_02 = int(input("Digite o segundo número: "))
-divisao = numero_01 / numero_02
-print(divisao)
+#numero_01 = int(input("Digite o primeiro número: "))
+#numero_02 = int(input("Digite o segundo número: "))
+#divisao = numero_01 / numero_02
+#print(divisao)
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
+
+numero = int(input("Insira um número: "))
+quadrado = (numero)**2
+print(quadrado)
 
 # #### Números de Ponto Flutuante (`float`)
 
