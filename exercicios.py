@@ -170,16 +170,26 @@ import math
 
 # 21: Conversor de Temperatura
 
-
-try:
-    celsius = float(input("Insira a temperatura em graus Celsius: "))
-    fator = celsius * (9/5) + 32
-    print(f"O resultado de Celsius p Fahrenheit é: {fator}")
-except ValueError:
-     print("Insira um valor válido")
-
+#try:
+#    celsius = float(input("Insira a temperatura em graus Celsius: "))
+#    fator = celsius * (9/5) + 32
+#    print(f"O resultado de Celsius p Fahrenheit é: {fator}")
+#except ValueError:
+#     print("Insira um valor válido")
 
 # 22: Verificador de Palíndromo
+
+entrada = input("Digite uma palavra ou frase: ")
+if isinstance(entrada, str):
+    formatado = entrada.replace(" ", "").lower()
+    if formatado == formatado[::-1]:
+        print("É um palíndromo.")
+    else:
+        print("Não é um palíndromo.")
+else:
+    print("Entrada inválida. Por favor, digite uma palavra ou frase.")
+
+
 # 23: Calculadora Simples
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
