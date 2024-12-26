@@ -6,33 +6,36 @@ import math
 #numero_01 = int(input("Digite um numero inteiro: "))
 #numero_02 = int(input("Digite outro numero inteiro: "))
 #resultado = numero_01 + numero_02
-#print(resultado)
+#print("A soma é:", resultado)
 
 # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
 
 #numero = int(input("Digite um numero: "))
 #calculo = numero // 5
-#print(calculo)
+#print("O resto da divisão por 5 é:", calculo)
 
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
 
 #numero_01 = float(input("Digite o primeiro número: "))
 #numero_02 = float(input("Digite o segundo número: "))
 #multiplicacao = numero_01 * numero_02
-#print(multiplicacao)
+#print("O resultado da multiplicação é:", multiplicacao)
 
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
 
+#try:
 #numero_01 = int(input("Digite o primeiro número: "))
 #numero_02 = int(input("Digite o segundo número: "))
 #divisao = numero_01 / numero_02
 #print(divisao)
+#except:
+ #   print("integer division or modulo by zero")
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 
 #numero = int(input("Insira um número: "))
 #quadrado = (numero)**2
-#print(quadrado)
+#print("O quadrado do número é:", quadrado)
 
 # #### Números de Ponto Flutuante (`float`)
 
@@ -48,7 +51,7 @@ import math
 #numero_01 = float(input("Escreva o primeiro numero: "))
 #numero_02 = float(input("Escreva o segundo numero: "))
 #media = (numero_01 + numero_02) /2
-#print(f"A smedia dos números é: {media}")
+#print(f"A média dos números é: {media}")
 
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 
@@ -95,15 +98,26 @@ import math
 #print(f"O ano é: {lista_dia_mes_ano[2]}")
 
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
-palavra01 = input("Insira a primeira palavra: ")
-palavra02 = input("Insira a segunda palavra: ")
-uniao = palavra01 + palavra02
-print(uniao)
+
+#palavra01 = input("Insira a primeira palavra: ")
+#palavra02 = input("Insira a segunda palavra: ")
+#uniao = palavra01 + palavra02
+#print(uniao)
 
 # #### Booleanos (`bool`)
 
 # 16. Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
+
+valor1 = True
+valor2 = True
+resultado_and = valor1 and valor2
+print("Resultado do AND lógico:", resultado_and)
+
+
 # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
+
+
+
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
