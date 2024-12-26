@@ -154,21 +154,31 @@ import math
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
 
 # Solicita os dois números ao usuário
-numero1 = float(input("Digite o primeiro número: "))
-numero2 = float(input("Digite o segundo número: "))
+#numero1 = float(input("Digite o primeiro número: "))
+#numero2 = float(input("Digite o segundo número: "))
 
 # Compara os números
-sao_diferentes = numero1 != numero2
+#sao_diferentes = numero1 != numero2
 
 # Exibe o resultado
-if sao_diferentes:
-    print(f"Os números {numero1} e {numero2} são diferentes.")
-else:
-    print(f"Os números {numero1} e {numero2} são iguais.")
+#if sao_diferentes:
+ #   print(f"Os números {numero1} e {numero2} são diferentes.")
+#else:
+ #   print(f"Os números {numero1} e {numero2} são iguais.")
 
 # #### try-except e if
 
 # 21: Conversor de Temperatura
+
+
+try:
+    celsius = float(input("Insira a temperatura em graus Celsius: "))
+    fator = celsius * (9/5) + 32
+    print(f"O resultado de Celsius p Fahrenheit é: {fator}")
+except ValueError:
+     print("Insira um valor válido")
+
+
 # 22: Verificador de Palíndromo
 # 23: Calculadora Simples
 # 24: Classificador de Números
