@@ -125,18 +125,32 @@ import math
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
 
 # Solicita o valor booleano do usuário
-valor = input("Digite um valor booleano (True ou False): ")
+#valor = input("Digite um valor booleano (True ou False): ")
 
 # Converte a entrada para booleano
-valor = valor.strip().capitalize() == "True"
+#valor = valor.strip().capitalize() == "True"
 
 # Inverte o valor
-valor_invertido = not valor
+#valor_invertido = not valor
 
 # Exibe o valor invertido
-print(f"O valor invertido de {valor} é: {valor_invertido}")
+#print(f"O valor invertido de {valor} é: {valor_invertido}")
 
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
+
+# Solicita os dois números ao usuário
+numero1 = float(input("Digite o primeiro número: "))
+numero2 = float(input("Digite o segundo número: "))
+
+# Compara os números
+sao_iguais = numero1 == numero2
+
+# Exibe o resultado
+if sao_iguais:
+    print(f"Os números {numero1} e {numero2} são iguais.")
+else:
+    print(f"Os números {numero1} e {numero2} são diferentes.")
+
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
 
 # #### try-except e if
