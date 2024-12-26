@@ -210,19 +210,29 @@ import math
 #    print("Erro: Entrada inválida. Certifique-se de inserir números.")
 
 # 24: Classificador de Números
-try:
-    numero = int(input("Digite um número: "))
-    if numero > 0:
-        print("Positivo")
-    elif numero < 0:
-        print("Negativo")
-    else:
-        print("Zero")
-    if numero % 2 == 0:
-        print("Par")
-    else:
-        print("Ímpar")
-except ValueError:
-    print("Por favor, digite um número inteiro válido.")
+#try:
+#    numero = int(input("Digite um número: "))
+#    if numero > 0:
+#        print("Positivo")
+#    elif numero < 0:
+#        print("Negativo")
+#    else:
+#        print("Zero")
+#    if numero % 2 == 0:
+#        print("Par")
+#    else:
+#        print("Ímpar")
+#except ValueError:
+#    print("Por favor, digite um número inteiro válido.")
 
 # 25: Conversão de Tipo com Validação
+
+entrada_lista = input("Digite uma lista de números separados por vírgula: ")
+numeros_str = entrada_lista.split(",")
+numeros_int = []
+try:
+    for num in numeros_str:
+        numeros_int.append(int(num.strip()))
+    print("Lista de inteiros:", numeros_int)
+except ValueError:
+    print("Erro: certifique-se de que todos os elementos são números inteiros válidos.")
