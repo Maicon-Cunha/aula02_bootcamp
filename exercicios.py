@@ -179,17 +179,35 @@ import math
 
 # 22: Verificador de Palíndromo
 
-entrada = input("Digite uma palavra ou frase: ")
-if isinstance(entrada, str):
-    formatado = entrada.replace(" ", "").lower()
-    if formatado == formatado[::-1]:
-        print("É um palíndromo.")
-    else:
-        print("Não é um palíndromo.")
-else:
-    print("Entrada inválida. Por favor, digite uma palavra ou frase.")
-
+#entrada = input("Digite uma palavra ou frase: ")
+#if isinstance(entrada, str):
+#    formatado = entrada.replace(" ", "").lower()
+#    if formatado == formatado[::-1]:
+#        print("É um palíndromo.")
+#    else:
+#        print("Não é um palíndromo.")
+#else:
+#    print("Entrada inválida. Por favor, digite uma palavra ou frase.")
 
 # 23: Calculadora Simples
+
+try:
+    num1 = float(input("Digite o primeiro número: "))
+    num2 = float(input("Digite o segundo número: "))
+    operador = input("Digite o operador (+, -, *, /): ")
+    if operador == "+":
+        resultado = num1 + num2
+    elif operador == "-":
+        resultado = num1 - num2
+    elif operador == "*":
+        resultado = num1 * num2
+    elif operador == "/":
+        resultado = num1 / num2
+    else:
+        print("Operador inválido ou divisão por zero.")
+    print("Resultado: ", resultado)
+except ValueError:
+    print("Erro: Entrada inválida. Certifique-se de inserir números.")
+
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
