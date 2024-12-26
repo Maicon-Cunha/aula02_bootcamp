@@ -116,13 +116,26 @@ import math
 
 # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
 
-valor1 = input("Digite o primeiro valor (True ou False): ")
-valor2 = input("Digite o segundo valor (True ou False): ")
-resultado_or = valor1 or valor2
-print("Resultado do OR lógico:", resultado_or)
+#valor1 = input("Digite o primeiro valor (True ou False): ")
+#valor2 = input("Digite o segundo valor (True ou False): ")
+#resultado_or = valor1 or valor2
+#print("Resultado do OR lógico:", resultado_or)
 
 
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
+
+# Solicita o valor booleano do usuário
+valor = input("Digite um valor booleano (True ou False): ")
+
+# Converte a entrada para booleano
+valor = valor.strip().capitalize() == "True"
+
+# Inverte o valor
+valor_invertido = not valor
+
+# Exibe o valor invertido
+print(f"O valor invertido de {valor} é: {valor_invertido}")
+
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
 
